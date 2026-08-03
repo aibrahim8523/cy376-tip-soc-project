@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Build artefacts (the report and figures are committed; these are scratch)
+*.bak
+*.tmp
+preview/
+
+# NEVER commit secrets
+.env
+*.env.local
+*.key
+*.pem
+secrets.yaml
+ossec.conf.local
+
+# Virtual machine disks (if you ever store them in this repo)
+*.vmdk
+*.vdi
+*.qcow2
+*.iso
