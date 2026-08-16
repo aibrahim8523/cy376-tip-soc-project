@@ -1,0 +1,14 @@
+# /etc/netplan/00-installer-config.yaml
+# Static IP for the monitored endpoint (192.168.100.30).
+# Apply with: sudo netplan apply
+network:
+  version: 2
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses: [192.168.100.30/24]
+      routes:
+        - to: default
+          via: 192.168.100.1
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]
