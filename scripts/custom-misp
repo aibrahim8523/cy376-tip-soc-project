@@ -1,0 +1,4 @@
+#!/bin/sh
+# custom-misp wrapper — Wazuh calls this executable (matches <name>custom-misp</name>).
+# It forwards all arguments to the Python implementation.
+exec /usr/bin/env python3 /var/ossec/integrations/custom-misp.py "$@"

@@ -1,0 +1,33 @@
+# Secrets - never commit
+.env
+*.env.local
+*.key
+*.pem
+secrets.yaml
+ossec.conf.local
+credentials.txt
+
+# VM disks
+*.vmdk
+*.vdi
+*.qcow2
+*.iso
+
+# Build artefacts / caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Anything containing keys/passwords in evidence (keep descriptive screenshots only)
+evidence/*api*key*
